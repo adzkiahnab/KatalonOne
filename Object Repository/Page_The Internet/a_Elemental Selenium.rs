@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Elemental Selenium</name>
+   <tag></tag>
+   <elementGuidId>1d89de34-5d57-46b6-a3d2-0f81b100e305</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='page-footer']/div/div/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.large-4.large-centered.columns > div > a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Elemental Selenium&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>a5a42379-8229-4b18-be6e-2ea28936d5c8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>target</name>
+      <type>Main</type>
+      <value>_blank</value>
+      <webElementGuid>a8cf8010-3a6b-41b4-ac51-2b191be38eda</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>http://elementalselenium.com/</value>
+      <webElementGuid>d3df68ae-3e1e-4730-be05-3195c687febe</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Elemental Selenium</value>
+      <webElementGuid>23484560-e568-4f4d-a997-906607495abb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;page-footer&quot;)/div[@class=&quot;large-4 large-centered columns&quot;]/div[1]/a[1]</value>
+      <webElementGuid>32ceea91-9ea7-4771-af87-ef798034c91b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='page-footer']/div/div/a</value>
+      <webElementGuid>8d54fc58-e17d-4c69-80dd-2ee96ef707c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Elemental Selenium')]</value>
+      <webElementGuid>31d8c561-cb97-429a-b11d-decb4cf16afe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='A/B Test Control'])[1]/following::a[1]</value>
+      <webElementGuid>d42a9850-8430-413d-9d32-56f4525901e5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Elemental Selenium']/parent::*</value>
+      <webElementGuid>5f30c7a2-3059-4f70-adad-7ae3508a0d9a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[@href='http://elementalselenium.com/']</value>
+      <webElementGuid>f588e87f-f462-4ca6-a909-2b7948a95e49</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/a</value>
+      <webElementGuid>f47dd7a3-a60e-4334-9780-5ad25851108f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = 'http://elementalselenium.com/' and (text() = 'Elemental Selenium' or . = 'Elemental Selenium')]</value>
+      <webElementGuid>96afa47d-9955-4240-a9e0-11021062c6f8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
