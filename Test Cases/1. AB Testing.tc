@@ -6,4 +6,17 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>a80a2b71-7095-4bfd-83e1-852b56e8ee79</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ae381fe5-fc5a-4b0a-ae87-a5acc8f6eaa9</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'A/B Test Variation 1;A/B Test Control'</defaultValue>
+      <description></description>
+      <id>ae381fe5-fc5a-4b0a-ae87-a5acc8f6eaa9</id>
+      <masked>false</masked>
+      <name>ABTitle</name>
+   </variable>
 </TestCaseEntity>
