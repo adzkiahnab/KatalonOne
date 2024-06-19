@@ -22,26 +22,26 @@ import org.openqa.selenium.Keys as Keys
 WebUI.openBrowser(GlobalVariable.urlMain)
 
 //2. check if the button is clickable
-WebUI.verifyElementClickable(findTestObject('Page_The Internet/a_AB Testing'), FailureHandling.STOP_ON_FAILURE)
-WebUI.click(findTestObject('Object Repository/Page_The Internet/a_AB Testing'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('ABTesting/a_AB Testing'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Object Repository/ABTesting/a_AB Testing'), FailureHandling.STOP_ON_FAILURE)
 WebUI.navigateToUrl('https://the-internet.herokuapp.com/abtest')
 
 //4. verify the content
-String expectedTitle = ['A/B Test Controlx', 'A/B Test Variation 1x']
-String actualTitle = WebUI.getText(findTestObject('Object Repository/Page_The Internet/h3_AB Test Control'))
-if (expectedTitle.contains(actualTitle)) println('up')
-	else println('down')
+//there are 2 versions of title. I still could not find the method to verify the changes.
+String expectedTitle = 'A/B Test Variation 1' // 'A/B Test Control'
+String actualTitle = WebUI.getText(findTestObject('Object Repository/ABTesting/h3_AB Test Control'))
+WebUI.verifyMatch(expectedTitle, actualTitle, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 String expectedPar = 'Also known as split testing. This is a way in which businesses are able to simultaneously test and learn different versions of a page to see which text and/or functionality works best towards a desired outcome (e.g. a user action such as a click-through).'
-String actualPar = WebUI.getText(findTestObject('Object Repository/Page_The Internet/p_Also known as split testing. This is a way in which businesses are able to simultaneously test and learn different versions of a page to see which text andor functionality works best towards a desired outcome (e.g. a u'))
-WebUI.verifyEqual(actualPar, expectedPar, FailureHandling.CONTINUE_ON_FAILURE)
+String actualPar = WebUI.getText(findTestObject('Object Repository/ABTesting/p_Also known as split testing. This is a way in which businesses are able to simultaneously test and learn different versions of a page to see which text andor functionality works best towards a desired outcome (e.g. a u'))
+WebUI.verifyMatch(expectedPar, actualPar, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 //5. Verify Footer
 String expectedFooter = 'Powered by Elemental Selenium'
-String actualFooter = WebUI.getText(findTestObject('Object Repository/Page_The Internet/div_Powered by Elemental Selenium'))
-WebUI.verifyEqual(actualFooter, expectedFooter, FailureHandling.CONTINUE_ON_FAILURE)
+String actualFooter = WebUI.getText(findTestObject('Object Repository/ABTesting/div_Powered by Elemental Selenium'))
+WebUI.verifyMatch(expectedFooter, actualFooter, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Page_The Internet/a_Elemental Selenium'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Object Repository/ABTesting/a_Elemental Selenium'), FailureHandling.STOP_ON_FAILURE)
 WebUI.switchToWindowUrl('https://elementalselenium.com/')
 
 WebUI.closeBrowser()

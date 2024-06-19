@@ -9,4 +9,9 @@
       <initValue>'https://the-internet.herokuapp.com/'</initValue>
       <name>urlMain</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>0</initValue>
+      <name>amtBox</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
