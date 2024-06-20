@@ -34,10 +34,10 @@ class DefaultTestCaseListener {
 
 	/**
 	 * Executes after every test case ends.
+	 * 
 	 * @param testCaseContext related information of the executed test case.
 	 */
-	@AfterTestCase
-	def closeBrowserWithGlobalVariable() {
-		WebUI.closeBrowser()
-	}
+	/*
+	 * @AfterTestCase def closeBrowserWithGlobalVariable() { WebUI.closeBrowser() }
+	 */
 }
