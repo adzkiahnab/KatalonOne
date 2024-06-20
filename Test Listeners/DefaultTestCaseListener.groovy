@@ -28,8 +28,8 @@ class DefaultTestCaseListener {
 	 * @param testCaseContext related information of the executed test case.
 	 */
 	@BeforeTestCase
-	def openBrowserWithGlobalVariable(urlMain) {
-		WebUI.openBrowser(urlMain)
+	def openBrowserWithGlobalVariable() {
+		WebUI.openBrowser(GlobalVariable.urlMain)
 	}
 
 	/**
