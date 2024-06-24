@@ -17,7 +17,11 @@ import com.kms.katalon.core.testobject.ObjectRepository
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
-import com.kms.katalon.core.webui.common.WebUiCommonHelper //additional
+
+//Additional
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
 
 import internal.GlobalVariable
 
@@ -41,14 +45,13 @@ import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 class addRemove {
 	/**
-	 * Add Elements
+	 * Count Elements by object
 	 */
 	@Keyword
 	def addElements(TestObject testObj) {
-		List<WebElement> boxDel =  WebUiCommonHelper.findWebElements(testObj, 5)
-		//WebUiBuiltInKeywords.findWebElement(testObj)
-		KeywordUtil.logInfo(boxDel.size().toString())
-		return boxDel.size()
+		List<WebElement> boxTotal =  WebUiCommonHelper.findWebElements(testObj, 5)
+		KeywordUtil.logInfo(boxTotal.size().toString())
+		return boxTotal.size()
 	}
 	/**
 	 * Refresh browser

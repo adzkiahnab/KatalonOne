@@ -17,22 +17,26 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-TestObject addBox = findTestObject('Object Repository/AddRemove/button_Add Element')
-TestObject newBox = findTestObject('Object Repository/AddRemove/button_Delete')
+import com.kms.katalon.core.util.KeywordUtil
+
+TestObject addBtn = findTestObject('Object Repository/AddRemove/button_Add Element')
+TestObject newBtn = findTestObject('Object Repository/AddRemove/button_Delete')
 
 WebUI.verifyElementInViewport(findTestObject('Object Repository/AddRemove/a_AddRemove Elements'), 3, FailureHandling.STOP_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/AddRemove/a_AddRemove Elements'), FailureHandling.STOP_ON_FAILURE)
 
+//verify the header text
 WebUI.navigateToUrl('https://the-internet.herokuapp.com/add_remove_elements/')
-
 String addremoveHeader = WebUI.getText(findTestObject('Object Repository/AddRemove/h3_AddRemove Elements'))
-
 WebUI.verifyMatch('Add/Remove Elements', addremoveHeader, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyElementVisible(addBox, FailureHandling.STOP_ON_FAILURE)
-WebUI.click(addBox, FailureHandling.STOP_ON_FAILURE)
-WebUI.click(addBox, FailureHandling.STOP_ON_FAILURE)
-WebUI.click(addBox, FailureHandling.STOP_ON_FAILURE)
-
-GlobalVariable.amtBox = CustomKeywords.'functionToCall.addRemove.addElements'(newBox)
-
+//click the add button to generate new Button
+WebUI.verifyElementVisible(addBtn, FailureHandling.STOP_ON_FAILURE)
+GlobalVariable.amtClick = 3
+WebUI.click(addBtn, FailureHandling.STOP_ON_FAILURE)
+WebUI.click(addBtn, FailureHandling.STOP_ON_FAILURE)
+WebUI.click(addBtn, FailureHandling.STOP_ON_FAILURE)
+ 
+//verify amount of button(s) that generated equals with the User input (by click)
+GlobalVariable.amtBtn = CustomKeywords.'functionToCall.addRemove.addElements'(newBtn)
+WebUI.verifyEqual(GlobalVariable.amtClick, GlobalVariable.amtBtn, FailureHandling.STOP_ON_FAILURE)

@@ -20,8 +20,16 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('2.1. Add Elements'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //delete the button
-amtBox = GlobalVariable.amtBox
-for (i=0;i<amtBox;i++) {
+amtBtn = GlobalVariable.amtBtn
+amtClickDel = 0
+for (int i =0; i < GlobalVariable.amtBtn;i++) {
 	WebUI.click(findTestObject('Object Repository/AddRemove/button_Delete'))
+	amtBtn--
+	amtClickDel++
 }
+
+//ensure all button has been deleted
+expectedBtn = GlobalVariable.amtClick - amtClickDel
+WebUI.verifyEqual(amtBtn, expectedBtn, FailureHandling.STOP_ON_FAILURE)
+
 
