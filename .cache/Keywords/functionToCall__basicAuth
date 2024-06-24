@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "AF62F808954DBEE5E629CAC7EEB897C8",
+  "keywordClasses": [
+    {
+      "name": "functionToCall.basicAuth",
+      "keywordMethods": [
+        {
+          "name": "moveToPopupForm",
+          "parameters": [],
+          "javadoc": "/**\n\t * verify pop up login\n\t */"
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
