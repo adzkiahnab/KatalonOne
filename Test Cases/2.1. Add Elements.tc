@@ -6,17 +6,4 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>53dcc54b-c2af-468a-b434-0a4b9cb0eef9</testCaseGuid>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>163d3a6d-6aee-4f91-a39d-1436b97543fa</variableId>
-   </variableLinks>
-   <variable>
-      <defaultValue>GlobalVariable.amtBox</defaultValue>
-      <description></description>
-      <id>163d3a6d-6aee-4f91-a39d-1436b97543fa</id>
-      <masked>false</masked>
-      <name>getAmtBox</name>
-   </variable>
 </TestCaseEntity>

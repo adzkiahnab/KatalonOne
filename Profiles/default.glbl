@@ -12,6 +12,11 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>0</initValue>
-      <name>amtBox</name>
+      <name>amtBtn</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>0</initValue>
+      <name>amtClick</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
