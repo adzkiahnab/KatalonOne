@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>6. Checkboxes</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a7e91ed4-8251-4473-82fd-7073d4035ada</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8f7703d5-295f-4712-b684-b69cb1267515</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>594c7cee-fed6-413f-8673-bc3fc92a0422</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>8f7703d5-295f-4712-b684-b69cb1267515</id>
+      <masked>false</masked>
+      <name>totalChecked</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>594c7cee-fed6-413f-8673-bc3fc92a0422</id>
+      <masked>false</masked>
+      <name>totalUnchecked</name>
+   </variable>
+</TestCaseEntity>

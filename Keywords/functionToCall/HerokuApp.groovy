@@ -18,11 +18,6 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
 
-//Additional
-import com.kms.katalon.core.webui.common.WebUiCommonHelper
-import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.testobject.TestObject
-
 import internal.GlobalVariable
 
 import org.openqa.selenium.WebElement
@@ -42,8 +37,10 @@ import com.kms.katalon.core.util.KeywordUtil
 
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
+//Additional
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 
-class addRemove {
+class HerokuApp {
 	/**
 	 * Count Elements by object
 	 */

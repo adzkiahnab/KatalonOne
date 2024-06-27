@@ -9,6 +9,16 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/AddRemove/button_Delete_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/ChallengingDOM/a_bar",
+      "brokenLocator": "//a[@id\u003d\u0027c57db400-14ca-013d-174b-6e02b837b0cf\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[@id\u003d\u0027content\u0027]/div/div/div/div/a",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/ChallengingDOM/a_bar_idRelative.png"
     }
   ]
 }

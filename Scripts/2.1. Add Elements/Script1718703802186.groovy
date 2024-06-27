@@ -38,5 +38,5 @@ WebUI.click(addBtn, FailureHandling.STOP_ON_FAILURE)
 WebUI.click(addBtn, FailureHandling.STOP_ON_FAILURE)
  
 //verify amount of button(s) that generated equals with the User input (by click)
-GlobalVariable.amtBtn = CustomKeywords.'functionToCall.addRemove.addElements'(newBtn)
+GlobalVariable.amtBtn = CustomKeywords.'functionToCall.HerokuApp.addElements'(newBtn)
 WebUI.verifyEqual(GlobalVariable.amtClick, GlobalVariable.amtBtn, FailureHandling.STOP_ON_FAILURE)
